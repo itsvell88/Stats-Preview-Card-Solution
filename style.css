@@ -1,0 +1,157 @@
+/* Reset Default Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Ensures padding & border don't affect width or height */
+}
+
+/* New Default Styling */
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter";
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* * */
+/* MAIN STYLING */
+main {
+  margin: 10em;
+  background-color: hsl(244, 38%, 16%);
+  width: 70em;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.6em;
+}
+
+.text-container {
+  margin: 4em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4em;
+}
+
+.stat-grid {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  gap: 3em;
+}
+
+.column {
+  flex: 1;
+}
+
+.grid-row-1,
+.grid-row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.number {
+  font-weight: 700;
+  font-size: 1.7em;
+  margin-bottom: 0.2em;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 0.1em;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  overflow: hidden;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  display: block;
+  opacity: 0.8;
+}
+
+.attribution {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* * */
+/* MOBILE VERSION */
+@media (max-width: 750px) {
+  main {
+    width: 85%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .text-container {
+    text-align: center;
+    margin: 3.5em;
+  }
+
+  .image-container {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 0.6em;
+    border-top-left-radius: 0.6em;
+    border-bottom-right-radius: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+
+  .stat-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grid-row-1 > div,
+  .grid-row-2 > div {
+    margin-bottom: 0.5em;
+  }
+
+  .attribution {
+    margin-bottom: 2em;
+  }
+}

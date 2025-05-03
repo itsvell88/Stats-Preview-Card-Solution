@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font: 400 & 700 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+    />
+    <!-- Font: 400 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+    />
+  </head>
+
+  <body>
+    <!-- Card Container -->
+    <main>
+      <!-- Text Container -->
+      <div class="text-container">
+        <!-- Text Items Container-->
+        <div class="text-items-container">
+          <!-- Heading -->
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+
+          <!-- Description -->
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <!-- Stats Container -->
+          <div class="stat-grid">
+            <!-- column 1 -->
+            <div class="column">
+              <div class="number">10k+</div>
+              <div class="category">companies</div>
+            </div>
+
+            <!-- column 2 -->
+            <div class="column">
+              <div class="number">314</div>
+              <div class="category">templates</div>
+            </div>
+
+            <!-- column 3 -->
+            <div class="column">
+              <div class="number">12M+</div>
+              <div class="category">queries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Container -->
+      <div class="image-container">
+        <picture>
+          <!-- Images for Different Web Width -->
+          <source media="(min-width: 375px)" srcset="image-header-mobile.jpg" />
+          <source
+            media="(min-width: 1000px)"
+            srcset="image-header-desktop.jpg"
+          />
+          <source srcset="image-header-desktop.jpg" />
+          <img
+            class="image"
+            src="image-header-desktop.jpg"
+            alt="Image"
+            width="100%"
+            height="auto"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <!-- Footnote -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/itsvell88">Vell</a>.
+    </div>
+  </body>
+</html>
